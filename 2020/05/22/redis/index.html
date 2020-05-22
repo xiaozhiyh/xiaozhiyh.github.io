@@ -27,12 +27,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一、redis是什么基于键值对存储的高效率存储，键值对不同数据类型进行储存。 相比较Memcached则是基于一个存储键&#x2F;值对的[hashmap]。 二、redis的优势1、数据结构字符类型（String）、散列类型（hash）、列表类型（list）、集合类型（set）、有序集合（sorted-set） 2、功能：1）、可以为每个key设置超时时间 2）、可以通过列表类型来实现分布式队列的操作 3">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://xiaozhiyh.github.io/2020/05/22/images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png">
+<meta property="og:image" content="http://xiaozhiyh.github.io/images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png">
 <meta property="article:published_time" content="2020-05-21T17:32:27.000Z">
-<meta property="article:modified_time" content="2020-05-21T17:54:54.578Z">
+<meta property="article:modified_time" content="2020-05-22T12:10:38.053Z">
 <meta property="article:author" content="Stephen Jiang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://xiaozhiyh.github.io/2020/05/22/images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png">
+<meta name="twitter:image" content="http://xiaozhiyh.github.io/images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png">
 
 <link rel="canonical" href="http://xiaozhiyh.github.io/2020/05/22/redis/">
 
@@ -176,7 +176,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-05-22 01:32:27 / Modified: 01:54:54" itemprop="dateCreated datePublished" datetime="2020-05-22T01:32:27+08:00">2020-05-22</time>
+              <time title="Created: 2020-05-22 01:32:27 / Modified: 20:10:38" itemprop="dateCreated datePublished" datetime="2020-05-22T01:32:27+08:00">2020-05-22</time>
             </span>
 
           
@@ -535,7 +535,7 @@
 <p>c) 锁是非重入的，同一个线程在没有释放锁之前无法再次获得该锁</p>
 <h3 id="2、缓存-redis-setnx"><a href="#2、缓存-redis-setnx" class="headerlink" title="2、缓存 -redis setnx"></a>2、缓存 -redis setnx</h3><p>【setnx】在key不存在的情况下可以为key设置一个值，若存在则无法设置</p>
 <h3 id="3、zookeeper"><a href="#3、zookeeper" class="headerlink" title="3、zookeeper"></a>3、zookeeper</h3><p>创建临时有序节点/创建唯一节点名称，谁创建成功，谁就获得了这个锁。</p>
-<p><img src="../images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png" alt="zookeeper"></p>
+<p><img src="/../../images/redis/zookeeper%E7%AB%9E%E4%BA%89%E9%94%81.png" alt="zookeeper"></p>
 <p>zookeeper分布式锁</p>
 <p>a) watcher事件，获取节点删除后的主动通知，</p>
 <p>b) 基于临时节点，会话失效后节点会被删除</p>
